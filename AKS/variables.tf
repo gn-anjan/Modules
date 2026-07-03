@@ -22,10 +22,6 @@ variable "SKU" {
   type = string
   description = "SKU for Container Registry"
 }
-variable "GeoReplicationLocation" {
-  type = list(string)
-  description = "SKU for Container Registry"
-}
 variable "NodePoolName" {
   type = string
   description = "NodePoolName"

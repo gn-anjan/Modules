@@ -10,14 +10,6 @@ resource "azurerm_container_registry" "ContainerRegistry" {
   location            = var.RSG_LOCATION
   sku                 = var.SKU
   admin_enabled       = false
-  dynamic "georeplications" {
-    for_each = var.GeoReplicationLocation
-    content {
-    location = georeplications.value
-    zone_redundancy_enabled = true
-    tags                    = {}
-    }
-  }
   identity {
     type = "UserAssigned"
     identity_ids = [
