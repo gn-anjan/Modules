@@ -45,4 +45,5 @@ resource "azurerm_kubernetes_cluster" "AKS" {
   workload_autoscaler_profile {
     keda_enabled = var.kedaStatus
   }
+  dns_prefix = var.DNSPrefix
 }

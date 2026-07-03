@@ -54,3 +54,7 @@ variable "kedaStatus" {
     description = "KedaTrueFalse"
     default = false
 }
+variable "DNSPrefix" {
+  type = string
+  description = "dns prefix"
+}
