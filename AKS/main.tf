@@ -42,4 +42,7 @@ resource "azurerm_kubernetes_cluster" "AKS" {
     ]
   }
   tags = var.tags
+  workload_autoscaler_profile {
+    keda_enabled = var.kedaStatus
+  }
 }

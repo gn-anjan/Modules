@@ -49,3 +49,8 @@ variable "tags" {
   }
   description = "tags"
 }
+variable "kedaStatus" {
+    type = bool
+    description = "KedaTrueFalse"
+    default = false
+}
